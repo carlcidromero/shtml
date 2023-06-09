@@ -1,0 +1,24 @@
+{
+  "name": "@carlcidromero/shtml",
+  "version": "0.1.0",
+  "description": "A Bash-based HTML generator",
+  "main": "index.js",
+  "scripts": {
+    "build": "./src/scripts/build-project.sh",
+    "test": "./src/scripts/build-project.sh --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlcidromero/shtml.git"
+  },
+  "keywords": [
+    "bash",
+    "html"
+  ],
+  "author": "Carl (Cid)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlcidromero/shtml/issues"
+  },
+  "homepage": "https://github.com/carlcidromero/shtml#readme"
+}
