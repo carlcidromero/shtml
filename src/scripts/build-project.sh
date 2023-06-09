@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+PARENT_PATH=$(
+  cd "$(dirname "${BASH_SOURCE[0]}")"
+  pwd -P
+)
+
+cd "$PARENT_PATH"
+
 DISTRIBUTION_DIRECTORY="../../dist"
 INJECTION_SCRIPT=inject-html.sh
 DESTINATION=../../dist/index.html

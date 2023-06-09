@@ -4,7 +4,8 @@
   "description": "A Bash-based HTML generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./src/scripts/build-project.sh",
+    "test": "./src/scripts/build-project.sh --dry-run"
   },
   "repository": {
     "type": "git",
