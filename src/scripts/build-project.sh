@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-DISTRIBUTION_DIRECTORY="../dist"
+DISTRIBUTION_DIRECTORY="../../dist"
 INJECTION_SCRIPT=inject-html.sh
-DESTINATION=../index.html
+DESTINATION=../../dist/index.html
 SOURCE=../components/hello-world.html
 
 if [ -d $DISTRIBUTION_DIRECTORY ]; then
@@ -10,5 +10,6 @@ if [ -d $DISTRIBUTION_DIRECTORY ]; then
 fi
 
 mkdir $DISTRIBUTION_DIRECTORY
+cp ../index.html $DISTRIBUTION_DIRECTORY
 
-bash $INJECTION_SCRIPT $DESTINATION $SOURCE '<div id="shtml-root">' --dry-run >../dist/index.html
+bash $INJECTION_SCRIPT $DESTINATION $SOURCE '<div id="shtml-root">' "$1"
