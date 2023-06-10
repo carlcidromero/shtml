@@ -1,4 +1,4 @@
-# `shtml`
+# `bashtml`
 
 A Bash-based HTML generator.
 
